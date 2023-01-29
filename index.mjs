@@ -9,10 +9,10 @@ import yargs from 'yargs';
  * Describe the command line interface with --help option
  */
 const parsedArguments = yargs(argv)
-  .scriptName('bump-versions')
+  .scriptName('bump-package-versions')
   .usage('Usage: $0 [options] <relative package.json paths>')
   .command('$0', 'Bump versions in multiple package.json and package-lock.json files at the same time.')
-  .example('$0 --part=patch --source=newest ./package.json ./frontend/package.json ./backend/package.json')
+  .example('$0 --part=minor --strategy=highest ./package.json ./frontend/package.json ./backend/package.json')
 
   .option('part', {
     alias: 'p',

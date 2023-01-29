@@ -1,11 +1,11 @@
-# bump-versions
+# bump-package-versions
 
 Bump the version of multiple package.json and package-lock.json files at the same time
 
 ## Installation
 
 ```
-npm i --save-dev bump-versions
+npm i --save-dev bump-package-versions
 ```
 
 ## Examples
@@ -13,7 +13,7 @@ npm i --save-dev bump-versions
 ### Bump the patch version to the highest found versions in any of the specified package.json files
 
 ```
-npx bump-versions --part=patch --strategy=highest ./package.json ./client/package.json ./server/package.json
+npx bump-package-versions --part=patch --strategy=highest ./package.json ./client/package.json ./server/package.json
 ```
 
 result:
@@ -24,7 +24,7 @@ result:
 ### Bump each of the package.json files minor version separately
 
 ```
-npx bump-versions --part=minor --strategy=separate ./package.json ./client/package.json ./server/package.json
+npx bump-package-versions --part=minor --strategy=separate ./package.json ./client/package.json ./server/package.json
 ```
 
 result:
