@@ -77,10 +77,9 @@ function bumpParsedVersion(parsedVersion, part) {
  */
 async function bumpVersions(args) {
   // Parse the passed arguments
-  const executionPath = path.dirname(args._.at(1));
   const packageJsonPathsRelative = args._.slice(2); // eg: ./package.json
 
-  const packageJsonPathsAbsolute = packageJsonPathsRelative.map((packageJsonPath) => path.join(executionPath, packageJsonPath));
+  const packageJsonPathsAbsolute = packageJsonPathsRelative.map((packageJsonPath) => path.join(path.resolve('./'), packageJsonPath));
   const packageJsonLockPathsAbsolute = packageJsonPathsAbsolute.map((packageJsonPath) => packageJsonPath.replace('.json', '-lock.json'));
 
 // Load package.json files from disk and parse the json
