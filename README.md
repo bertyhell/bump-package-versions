@@ -17,9 +17,9 @@ npx bump-package-versions --part=patch --strategy=highest ./package.json ./clien
 ```
 
 result:
-* ./package.json 1.0.0 => 5.2.1
-* ./client/package.json 2.3.4 => 5.2.1
-* ./server/package.json 5.2.0 => 5.2.1
+* ./package.json `1.0.0` => `5.2.1`
+* ./client/package.json `2.3.4` => `5.2.1`
+* ./server/package.json `5.2.0` => `5.2.1`
 
 ### Bump each of the package.json files minor version separately
 
@@ -28,9 +28,9 @@ npx bump-package-versions --part=minor --strategy=separate ./package.json ./clie
 ```
 
 result:
-* ./package.json 1.0.0 => 1.1.0
-* ./client/package.json 2.3.4 => 2.4.0
-* ./server/package.json 5.2.0 => 5.3.0
+* ./package.json `1.0.0` => `1.1.0`
+* ./client/package.json `2.3.4` => `2.4.0`
+* ./server/package.json `5.2.0` => `5.3.0`
 
 ## Options
 
