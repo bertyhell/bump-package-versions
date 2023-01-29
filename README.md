@@ -47,4 +47,4 @@ result:
 -h, --help      Show help  [boolean]
 --version       Show version number  [boolean]
 
-![syntax-diagram.png](syntax-diagram.png)
+![syntax-diagram.png](https://github.com/bertyhell/bump-package-versions/blob/master/syntax-diagram.png?raw=true)
