@@ -25,7 +25,7 @@
 	"author": "Bert Verhelst",
 	"license": "MIT",
 	"dependencies": {
-		"yargs": "^17.6.2"
+		"yargs": "^17.7.2"
 	},
 	"engines": {
 		"node": ">=14"
