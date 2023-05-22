@@ -4,6 +4,8 @@
 	"description": "Bump the version of multiple package.json and package-lock.json files with one command",
 	"main": "./index.mjs",
 	"bin": "./index.mjs",
+	"repository": "https://github.com/bertyhell/bump-package-versions",
+	"homepage": "https://github.com/bertyhell/bump-package-versions",
 	"scripts": {
 		"start": "node ./index.mjs --part patch --strategy=highest ./package.json",
 		"test": "echo \"Error: no test specified\" && exit 1"
