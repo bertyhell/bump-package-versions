@@ -142,11 +142,11 @@ async function bumpVersions(args) {
 
 // Write package.json files back to disk
   await Promise.all(packageJsonPathsAbsolute.map(async (path, index) => {
-    return await fs.writeFile(path, JSON.stringify(packageJsonContents[index], null, '\t') + '\n');
+    return await fs.writeFile(path, JSON.stringify(packageJsonContents[index], null, 2) + '\n');
   }));
 // Write package-lock.json files back to disk
   await Promise.all(packageJsonLockPathsAbsolute.map(async (path, index) => {
-    return await fs.writeFile(path, JSON.stringify(packageJsonLockContents[index], null, '\t') + '\n');
+    return await fs.writeFile(path, JSON.stringify(packageJsonLockContents[index], null, 2) + '\n');
   }));
 
   console.log(`Versions of ${packageJsonContents.length + packageJsonLockContents.length} files were updated${args.strategy === 'highest' ? ' to version ' + newVersionString : ''}.`)
