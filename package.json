@@ -1,35 +1,35 @@
 {
-	"name": "bump-package-versions",
-	"version": "1.0.5",
-	"description": "Bump the version of multiple package.json and package-lock.json files with one command",
-	"main": "./index.mjs",
-	"bin": "./index.mjs",
-	"repository": "https://github.com/bertyhell/bump-package-versions",
-	"homepage": "https://github.com/bertyhell/bump-package-versions",
-	"scripts": {
-		"start": "node ./index.mjs --part patch --strategy=highest ./package.json",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [
-		"bump",
-		"version",
-		"package.json",
-		"package-lock.json",
-		"versions",
-		"single",
-		"command",
-		"major",
-		"minor",
-		"patch",
-		"newest",
-		"separate"
-	],
-	"author": "Bert Verhelst",
-	"license": "MIT",
-	"dependencies": {
-		"yargs": "^17.7.2"
-	},
-	"engines": {
-		"node": ">=14"
-	}
+  "name": "bump-package-versions",
+  "version": "1.0.6",
+  "description": "Bump the version of multiple package.json and package-lock.json files with one command",
+  "main": "./index.mjs",
+  "bin": "./index.mjs",
+  "repository": "https://github.com/bertyhell/bump-package-versions",
+  "homepage": "https://github.com/bertyhell/bump-package-versions",
+  "scripts": {
+    "start": "node ./index.mjs --part patch --strategy=highest ./package.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bump",
+    "version",
+    "package.json",
+    "package-lock.json",
+    "versions",
+    "single",
+    "command",
+    "major",
+    "minor",
+    "patch",
+    "newest",
+    "separate"
+  ],
+  "author": "Bert Verhelst",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
 }
