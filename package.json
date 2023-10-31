@@ -1,6 +1,6 @@
 {
   "name": "bump-package-versions",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Bump the version of multiple package.json and package-lock.json files with one command",
   "main": "./index.mjs",
   "bin": "./index.mjs",
