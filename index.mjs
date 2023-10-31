@@ -2,7 +2,7 @@
 
 import * as fs from 'fs/promises';
 import * as path from 'path';
-import { argv } from 'node:process';
+import {argv} from 'node:process';
 import yargs from 'yargs';
 
 /**
@@ -102,9 +102,17 @@ async function bumpVersions(args) {
     parsedVersions.forEach(parsedVersion => {
       if (parsedVersion[0] > biggestVersion[0]) {
         biggestVersion = parsedVersion;
+        return;
+      }
+      if (parsedVersion[0] < biggestVersion[0]) {
+        return;
       }
       if (parsedVersion[1] > biggestVersion[1]) {
         biggestVersion = parsedVersion;
+        return;
+      }
+      if (parsedVersion[1] < biggestVersion[1]) {
+        return;
       }
       if (parsedVersion[2] > biggestVersion[2]) {
         biggestVersion = parsedVersion;
